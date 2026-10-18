@@ -1,6 +1,6 @@
 FROM oven/bun:1 AS base
 
-LABEL org.opencontainers.image.source = "https://github.com/zednotdead/KubernetesSubmissions"
+LABEL org.opencontainers.image.source="https://github.com/zednotdead/KubernetesSubmissions"
 WORKDIR /usr/src/app
 
 # install dependencies into temp directory
