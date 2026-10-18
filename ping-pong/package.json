@@ -1,0 +1,14 @@
+{
+  "$schema": "https://www.schemastore.org/package.json",
+  "name": "ping-pong",
+  "version": "1.7",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
