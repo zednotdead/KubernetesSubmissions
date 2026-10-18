@@ -3,17 +3,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hashgenerator-dep
+  name: hashresponse-dep
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hashgenerator
+      app: hashresponse
   template:
     metadata:
       labels:
-        app: hashgenerator
+        app: hashresponse
     spec:
       containers:
-        - name: hashgenerator
-          image: ghcr.io/zednotdead/log-output:1.3
+        - name: hashresponse
+          image: ghcr.io/zednotdead/log-output:1.7
