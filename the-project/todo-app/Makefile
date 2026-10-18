@@ -1,4 +1,4 @@
-VERSION=1.2
+VERSION=1.4
 
 build:
 	docker buildx build -t ghcr.io/zednotdead/todo-app:${VERSION} .
