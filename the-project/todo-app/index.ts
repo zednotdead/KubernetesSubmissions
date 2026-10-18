@@ -7,7 +7,7 @@ console.log(`Server started in port ${port}`)
 Bun.serve({
   port,
   routes: {
-    "/": new Response("Todo server."),
+    "/": (req) => new Response(`Todo server! Serving user agent: ${req.headers.get("User-Agent")}`),
   },
 });
 

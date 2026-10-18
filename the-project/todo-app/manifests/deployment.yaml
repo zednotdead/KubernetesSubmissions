@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
         - name: todo
-          image: ghcr.io/zednotdead/todo-app:1.4
+          image: ghcr.io/zednotdead/todo-app:1.5
