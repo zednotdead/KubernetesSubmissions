@@ -1,4 +1,4 @@
-VERSION=1.1
+VERSION=1.3
 
 build:
 	docker buildx build -t ghcr.io/zednotdead/log-output:${VERSION} .
