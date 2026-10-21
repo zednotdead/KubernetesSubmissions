@@ -14,6 +14,17 @@ spec:
       labels:
         app: hashresponse
     spec:
+      volumes:
+        - name: shared-files
+          emptyDir: {}
       containers:
-        - name: hashresponse
-          image: ghcr.io/zednotdead/log-output:1.7
+        - name: log-output
+          image: ghcr.io/zednotdead/log-output:1.10
+          volumeMounts:
+            - mountPath: /usr/share/app/files
+              name: shared-files
+        - name: log-writer
+          image: ghcr.io/zednotdead/log-writer:1.10
+          volumeMounts:
+            - mountPath: /usr/share/app/files
+              name: shared-files

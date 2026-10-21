@@ -1,0 +1,14 @@
+{
+  "$schema": "https://www.schemastore.org/package.json",
+  "name": "log-output",
+  "version": "1.10",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
