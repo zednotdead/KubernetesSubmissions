@@ -16,7 +16,8 @@ spec:
     spec:
       volumes:
         - name: shared-files
-          emptyDir: {}
+          persistentVolumeClaim:
+            claimName: log-output-pvc
       containers:
         - name: log-output
           image: ghcr.io/zednotdead/log-output:1.10
