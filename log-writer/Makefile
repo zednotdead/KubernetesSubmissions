@@ -1,4 +1,4 @@
-VERSION=1.10
+VERSION=1.11
 
 build:
 	docker buildx build -t ghcr.io/zednotdead/log-writer:${VERSION} .

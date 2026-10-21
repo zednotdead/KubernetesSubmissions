@@ -20,12 +20,12 @@ spec:
             claimName: log-output-pvc
       containers:
         - name: log-output
-          image: ghcr.io/zednotdead/log-output:1.10
+          image: ghcr.io/zednotdead/log-output:1.11
           volumeMounts:
-            - mountPath: /usr/share/app/files
+            - mountPath: /usr/src/app/files
               name: shared-files
         - name: log-writer
-          image: ghcr.io/zednotdead/log-writer:1.10
+          image: ghcr.io/zednotdead/log-writer:1.11
           volumeMounts:
-            - mountPath: /usr/share/app/files
+            - mountPath: /usr/src/app/files
               name: shared-files

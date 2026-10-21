@@ -14,6 +14,13 @@ spec:
       labels:
         app: ping-pong
     spec:
+      volumes:
+        - name: shared-files
+          persistentVolumeClaim:
+            claimName: log-output-pvc
       containers:
         - name: ping-pong
-          image: ghcr.io/zednotdead/ping-pong:latest
+          image: ghcr.io/zednotdead/ping-pong:1.11
+          volumeMounts:
+            - mountPath: /usr/src/app/files
+              name: shared-files

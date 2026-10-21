@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.schemastore.org/package.json",
   "name": "ping-pong",
-  "version": "1.7",
+  "version": "1.11",
   "module": "index.ts",
   "type": "module",
   "private": true,
